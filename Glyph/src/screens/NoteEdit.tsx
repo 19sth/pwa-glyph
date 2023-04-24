@@ -74,7 +74,7 @@ export default function NoteEdit({ navigation, route}) {
                 navigation={navigation} />
 
             <View style={{
-                minHeight: SizeScheme.get().screen.height.min - 145,
+                minHeight: SizeScheme.get().screen.height.min - 106,
                 justifyContent: 'space-between'
             }}>
                 <View>

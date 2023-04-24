@@ -4,7 +4,7 @@ import { ScrollView, View, Text } from 'react-native';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
 import { Note } from '../interfaces';
 import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
-import { decryptText, encryptText } from '../util';
+import { decryptText } from '../util';
 import { useIsFocused } from '@react-navigation/native';
 
 
@@ -81,7 +81,7 @@ export default function NoteDetail({ navigation, route }) {
                 ]} />
 
             <ScrollView style={{
-                minHeight: SizeScheme.get().screen.height.min - 215
+                minHeight: SizeScheme.get().screen.height.min - 180
             }}>
                 <View style={{ justifyContent: 'space-between' }}>
                     <View style={{
