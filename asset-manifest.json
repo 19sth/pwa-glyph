@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/glyph/static/js/main.f43dec12.js",
+    "static/js/56.4a520b39.js": "/glyph/static/js/56.4a520b39.js",
+    "favicon.ico": "/glyph/favicon.ico",
+    "index.html": "/glyph/index.html",
+    "favicon-32.png": "/glyph/favicon-32.png",
+    "favicon-16.png": "/glyph/favicon-16.png",
+    "serve.json": "/glyph/serve.json",
+    "manifest.json": "/glyph/manifest.json",
+    "main.f43dec12.js.map": "/glyph/static/js/main.f43dec12.js.map",
+    "56.4a520b39.js.map": "/glyph/static/js/56.4a520b39.js.map"
+  },
+  "entrypoints": [
+    "static/js/56.4a520b39.js",
+    "static/js/main.f43dec12.js"
+  ]
+}
