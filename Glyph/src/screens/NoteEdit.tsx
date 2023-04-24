@@ -3,7 +3,7 @@ import { ButtonText, Header, Input, InputTypes, Layout, Modal, Settings, SizeSch
 import { View } from 'react-native';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
 import { Note } from '../interfaces';
-import { decryptText, encryptText } from '../util';
+import { decryptText, encryptText, generateRandomNumericChars } from '../util';
 
 export default function NoteEdit({ navigation, route}) {
     const { getItem, setItem } = useAsyncStorage('glyph_notes');
@@ -34,17 +34,22 @@ export default function NoteEdit({ navigation, route}) {
             }
         });
 
+        const tPass = route?.params?.pass || pass;
+
         let content = note;
-        if (pass.length > 0) {
-            content = encryptText(note, pass);
+        if (tPass.length > 0) {
+            content = encryptText(note, tPass);
         }
+
+        const createdAt = route?.params?.createdAt || (new Date()).getTime(); 
 
         notes.push({
             title,
             content,
-            createdAt: route?.params?.createdAt || (new Date()).getTime(),
+            createdAt,
             updatedAt: (new Date()).getTime(),
-            hasPass: pass.length > 0
+            hasPass: tPass.length > 0,
+            passCheck: encryptText(generateRandomNumericChars(tPass), tPass)
         });
 
         if (ixToDel > -1) {
@@ -90,7 +95,13 @@ export default function NoteEdit({ navigation, route}) {
 
                 <ButtonText
                     label='Save'
-                    handleClick={() => { setModVis(true); }}
+                    handleClick={() => {
+                        if (route?.params?.pass) {
+                            saveNote();
+                        } else {
+                            setModVis(true);
+                        }
+                    }}
                     style={{ marginBottom: 20 }} />
             </View>
 

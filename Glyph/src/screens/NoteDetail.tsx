@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { ButtonText, Header, Input, InputTypes, Layout, Modal, SizeScheme, Takoz } from 'react-native-pieces';
-import { ScrollView, View, Text, Alert } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
 import { Note } from '../interfaces';
 import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
-import { decryptText } from '../util';
+import { decryptText, encryptText } from '../util';
 import { useIsFocused } from '@react-navigation/native';
 
 
@@ -84,17 +84,17 @@ export default function NoteDetail({ navigation, route }) {
                 minHeight: SizeScheme.get().screen.height.min - 215
             }}>
                 <View style={{ justifyContent: 'space-between' }}>
-                    <Text style={{
-                        fontSize: SizeScheme.get().font.c,
-                        fontWeight: 'bold'
-                    }}>{note.title}</Text>
                     <View style={{
                         flexDirection: 'row',
-                        justifyContent: 'flex-end',
-                        marginBottom: 20
+                        justifyContent: 'flex-end'
                     }}>
                         <Text>{(new Date(note.createdAt)).toDateString()}</Text>
                     </View>
+                    <Text style={{
+                        fontSize: SizeScheme.get().font.c,
+                        fontWeight: 'bold',
+                        marginBottom: 10
+                    }}>{note.title}</Text>
                     <Text style={{
                         fontSize: SizeScheme.get().font.e
                     }}>{note.content}</Text>
@@ -127,13 +127,19 @@ export default function NoteDetail({ navigation, route }) {
                     <ButtonText
                         label='Decrypt'
                         handleClick={() => {
-                            const text = decryptText(note.content, pass);
-                            setNote({
-                                ...note,
-                                content: text
-                            });
-                            setDecVis(false);
-                            setModVis(false);
+                            const passCheck = decryptText(note.passCheck, pass);
+                            if (passCheck.includes(pass)) {
+                                const text = decryptText(note.content, pass);
+                                setNote({
+                                    ...note,
+                                    content: text
+                                });
+                                setDecVis(false);
+                                setModVis(false);
+                            } else {
+                                setPass('');
+                                setModVis(false);
+                            }
                         }} />
                 </View>
             </Modal>

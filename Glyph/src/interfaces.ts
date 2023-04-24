@@ -4,4 +4,5 @@ export interface Note {
     createdAt: number
     updatedAt: number
     hasPass: boolean
+    passCheck: string
 }
