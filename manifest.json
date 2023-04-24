@@ -4,6 +4,6 @@
   "lang": "en",
   "name": "Glyph",
   "short_name": "Glyph",
-  "start_url": "/?utm_source=web_app_manifest",
+  "start_url": "/glyph/?utm_source=web_app_manifest",
   "orientation": "portrait"
 }
