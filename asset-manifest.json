@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/glyph/static/js/main.0880ca81.js",
-    "static/js/56.a6a01707.js": "/glyph/static/js/56.a6a01707.js",
+    "main.js": "/glyph/static/js/main.f43dec12.js",
+    "static/js/56.e42e11d2.js": "/glyph/static/js/56.e42e11d2.js",
     "favicon.ico": "/glyph/favicon.ico",
     "index.html": "/glyph/index.html",
     "favicon-32.png": "/glyph/favicon-32.png",
     "favicon-16.png": "/glyph/favicon-16.png",
     "serve.json": "/glyph/serve.json",
     "manifest.json": "/glyph/manifest.json",
-    "main.0880ca81.js.map": "/glyph/static/js/main.0880ca81.js.map",
-    "56.a6a01707.js.map": "/glyph/static/js/56.a6a01707.js.map"
+    "main.f43dec12.js.map": "/glyph/static/js/main.f43dec12.js.map",
+    "56.e42e11d2.js.map": "/glyph/static/js/56.e42e11d2.js.map"
   },
   "entrypoints": [
-    "static/js/56.a6a01707.js",
-    "static/js/main.0880ca81.js"
+    "static/js/56.e42e11d2.js",
+    "static/js/main.f43dec12.js"
   ]
 }
