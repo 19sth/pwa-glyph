@@ -81,7 +81,7 @@ export default function NoteDetail({ navigation, route }) {
                 ]} />
 
             <ScrollView style={{
-                minHeight: SizeScheme.get().screen.height.min - 180
+                minHeight: SizeScheme.get().screen.height.min - 215
             }}>
                 <View style={{ justifyContent: 'space-between' }}>
                     <View style={{

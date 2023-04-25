@@ -7441,10 +7441,10 @@ react-native-gradle-plugin@^0.71.17:
   resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz"
   integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
 
-react-native-pieces@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/react-native-pieces/-/react-native-pieces-0.0.5.tgz"
-  integrity sha512-r0bAOA60jFyXrijSmbnMZRGn73UkQgIYMcZagGMa1JVRwIV374ISKxZofy4dv0hVzc6lWeyJjcLxWjwtGBRLqw==
+react-native-pieces@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/react-native-pieces/-/react-native-pieces-0.0.6.tgz"
+  integrity sha512-jpvTmzu48z6BQqlJ7YOl22UnqEvFRZ8sRQEgvnP7EMHH5H8P3+yxlAYxAgzHGAwMtI3t6fbCtF2h+TWwEOks1g==
 
 "react-native-safe-area-context@>= 3.0.0", react-native-safe-area-context@4.5.0:
   version "4.5.0"

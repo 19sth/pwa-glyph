@@ -36,7 +36,7 @@ export default function NoteList({ navigation }) {
                     { faIcon: faPlus, handleClick: () => { navigation.push("NoteEdit") } },
                     { faIcon: faCircleInfo, handleClick: () => { console.log("look info") } },
                 ]} />
-            <ScrollView style={{minHeight: SizeScheme.get().screen.height.min - 106}}>
+            <ScrollView style={{minHeight: SizeScheme.get().screen.height.min - 145}}>
                 {
                     notes.map(e=>(
                         <Pressable 
