@@ -1,7 +1,7 @@
 {
   "files": {
     "main.js": "/glyph/static/js/main.f43dec12.js",
-    "static/js/56.e42e11d2.js": "/glyph/static/js/56.e42e11d2.js",
+    "static/js/56.3ac23c70.js": "/glyph/static/js/56.3ac23c70.js",
     "favicon.ico": "/glyph/favicon.ico",
     "index.html": "/glyph/index.html",
     "favicon-32.png": "/glyph/favicon-32.png",
@@ -9,10 +9,10 @@
     "serve.json": "/glyph/serve.json",
     "manifest.json": "/glyph/manifest.json",
     "main.f43dec12.js.map": "/glyph/static/js/main.f43dec12.js.map",
-    "56.e42e11d2.js.map": "/glyph/static/js/56.e42e11d2.js.map"
+    "56.3ac23c70.js.map": "/glyph/static/js/56.3ac23c70.js.map"
   },
   "entrypoints": [
-    "static/js/56.e42e11d2.js",
+    "static/js/56.3ac23c70.js",
     "static/js/main.f43dec12.js"
   ]
 }
