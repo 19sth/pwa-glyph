@@ -2,7 +2,7 @@
   "name": "glyph",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
-  "homepage": "http://mujdecisy.github.io/glyph",
+  "homepage": "http://mujdecisy.github.io/pwa-glyph",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
