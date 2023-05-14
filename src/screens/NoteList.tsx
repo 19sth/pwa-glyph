@@ -34,7 +34,7 @@ export default function NoteList({ navigation }) {
                 navigation={navigation}
                 buttons={[
                     { faIcon: faPlus, handleClick: () => { navigation.push("NoteEdit") } },
-                    { faIcon: faCircleQuestion, handleClick: () => { window.location.href="https://mujdecisy.github.io/app/glyph-encrypted-notes"; } },
+                    { faIcon: faCircleQuestion, handleClick: () => { window.open("https://mujdecisy.github.io/app/glyph-encrypted-notes", "blank"); } },
                 ]} />
             <ScrollView style={{minHeight: SizeScheme.get().screen.height.min - 145}}>
                 {
