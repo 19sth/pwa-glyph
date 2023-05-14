@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ColorScheme, Header, Layout, SizeScheme } from 'react-native-pieces';
-import { faPlus, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { View, ScrollView, Text, Pressable } from 'react-native';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
 import { Note } from '../interfaces';
