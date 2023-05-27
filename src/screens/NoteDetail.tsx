@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ButtonText, Header, Input, InputTypes, Layout, Modal, SizeScheme, Takoz } from 'react-native-pieces';
+import { ButtonText, Header, Input, InputTypes, Layout, Modal, SizeScheme, Takoz } from '@19sth/react-native-pieces';
 import { ScrollView, View, Text } from 'react-native';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
 import { Note } from '../interfaces';
