@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/pwa-glyph/static/js/main.f990f47f.js",
-    "static/js/56.3ac23c70.js": "/pwa-glyph/static/js/56.3ac23c70.js",
+    "main.js": "/pwa-glyph/static/js/main.c8dac6c0.js",
+    "static/js/421.bd2aba45.js": "/pwa-glyph/static/js/421.bd2aba45.js",
     "favicon.ico": "/pwa-glyph/favicon.ico",
     "index.html": "/pwa-glyph/index.html",
     "favicon-32.png": "/pwa-glyph/favicon-32.png",
     "favicon-16.png": "/pwa-glyph/favicon-16.png",
     "serve.json": "/pwa-glyph/serve.json",
     "manifest.json": "/pwa-glyph/manifest.json",
-    "main.f990f47f.js.map": "/pwa-glyph/static/js/main.f990f47f.js.map",
-    "56.3ac23c70.js.map": "/pwa-glyph/static/js/56.3ac23c70.js.map"
+    "main.c8dac6c0.js.map": "/pwa-glyph/static/js/main.c8dac6c0.js.map",
+    "421.bd2aba45.js.map": "/pwa-glyph/static/js/421.bd2aba45.js.map"
   },
   "entrypoints": [
-    "static/js/56.3ac23c70.js",
-    "static/js/main.f990f47f.js"
+    "static/js/421.bd2aba45.js",
+    "static/js/main.c8dac6c0.js"
   ]
 }
