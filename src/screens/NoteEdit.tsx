@@ -87,7 +87,7 @@ export default function NoteEdit({ navigation, route}) {
                     <Input
                         label='Note'
                         type={InputTypes.TEXT}
-                        settings={[Settings.TEXT_MULTILINE]}
+                        settings={[Settings.TEXT_MULTILINE_12]}
                         value={[note]}
                         handleChange={val => { setNote(val[0]); }} />
                 </View>
